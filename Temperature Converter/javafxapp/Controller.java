@@ -45,11 +45,11 @@ public class Controller implements Initializable {
 		});
 
 		convertButton.setOnAction(event -> {
-			convert();
+			convet();
 		});
 	}
 
-	private void convert() {
+	private void convet() {
 
 		String input = userInputField.getText(); // 23.4   ==> "23.4"
 
@@ -83,7 +83,7 @@ public class Controller implements Initializable {
 
 	private void display(float newTemperature) {
 
-		String unit = isC_TO_F? " F" : " C";
+		String uni = isC_TO_F? " F" : " C";
 
 		System.out.println("The new temperature is: " + newTemperature + unit);
 
